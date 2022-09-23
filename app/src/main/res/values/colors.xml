@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#08a0e9</color>
+    <color name="colorPrimaryDark">#0084B4</color>
+    <color name="colorAccent">#ed5432</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTweetDate">#4f0b0606</color>
+    <color name="colorTweeterUser">#1BA1F1</color>
+    <color name="colorURL">#132cad</color>
+    <color name="colorTransparent">#80212121</color>
+</resources>

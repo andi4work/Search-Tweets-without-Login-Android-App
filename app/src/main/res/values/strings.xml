@@ -1,0 +1,21 @@
+<resources>
+  <string name="app_name">Tweet Search</string>
+  <string name="searched_formatted"
+      formatted="false">Searched %s</string>
+  <string name="error_during_search">Error during search</string>
+  <string name="no_tweets_formatted"
+      formatted="false">No tweets for %s</string>
+  <string name="no_tweets">No tweets. Search something!</string>
+  <string name="no_internet_connection">No internet connection</string>
+  <string name="cannot_load_more_tweets">Cannot load more tweets</string>
+  <string name="api_rate_limit_exceeded">API rate limit exceeded</string>
+
+  //ADMOB IDS
+  <string name="admob_app_id">ca-app-pub-2954547390793092~8123601094</string>
+  <string name="b_ad_id_1">ca-app-pub-2954547390793092/1693924117</string>
+  <string name="b_ad_id_2">ca-app-pub-2954547390793092/6563107419</string>
+  <string name="i_ad_id_1">ca-app-pub-2954547390793092/5988392348</string>
+  <string name="i_ad_id_2">ca-app-pub-2954547390793092/5605248963</string>
+
+
+</resources>

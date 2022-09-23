@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/tweet_item_avatar_width_and_height"
+            android:layout_height="@dimen/tweet_item_avatar_width_and_height"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_name_and_date_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="15"
+                android:paddingRight="@dimen/tweet_item_name_padding_right"
+                android:singleLine="true"
+                android:text="name"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/tweet_item_login_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="15"
+                android:paddingBottom="@dimen/tweet_item_padding_bottom"
+                android:singleLine="true"
+                android:text="username"
+                android:textColor="@color/colorTweeterUser"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_login"
+                android:text="date"
+                android:textColor="@color/colorTweetDate" />
+        </LinearLayout>
+
+        <com.luseen.autolinklibrary.AutoLinkTextView
+            android:id="@+id/tv_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:layout_below="@+id/ll_user_name_and_date_container"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:text="tweet message"
+            android:textSize="@dimen/tweet_item_message_text" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
